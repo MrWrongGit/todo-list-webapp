@@ -2,7 +2,7 @@
 	todoList : [
 		{
 			text:"xxdfasdfsd",
-			complete:false
+			completed:false
 			startTime:xxxx,
 			expectTime:xxxx,
 			importance:2,

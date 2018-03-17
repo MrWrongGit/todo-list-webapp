@@ -7,15 +7,17 @@ const todoReducer = (state=[], action) => {
 				//add new
 				{
 					text : action.payload,
-					complete : false,
+					completed : false,
 				},
 				...state
 			]
 
 		case TOGGLE_TODO:
+			console.log("TOGGLE_TODO")
 			let newState = []
 			Object.assign(newState, state)
-			newState[action.payload].completed = ~newState[action.payload].completed
+			newState[action.payload].completed = !newState[action.payload].completed
+			console.log(newState)
           	return newState;
 
 		default:

@@ -1,7 +1,7 @@
 export const ADD_TODO  = 'add_todo'
 export const TOGGLE_TODO = 'toggle_todo'
 
-export const addToTodoList = (text) => ({
+export const addTodo = (text) => ({
 	type 	: ADD_TODO,
 	payload : text
 })
